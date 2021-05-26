@@ -51,6 +51,20 @@ PLAYER
 ==============================================================================
 */
 
+void() player_hpregen =
+{
+	if(self.health < 100 && self.hpr_delay <= time && self.hpr_delay2 <= time)
+	{
+		
+		if( mod(self.health,25.0) > 0)
+		{
+			self.hpr_delay = time + 0.75;
+			self.health = self.health+1;
+		}
+		
+	}
+
+}
 void()	player_stand1 =[	$axstnd1,	player_stand1	]
 {
 	W_SetIdleWeaponFrame();

@@ -6,6 +6,9 @@ CLIENT
 ==============================================================================
 */
 
+//Prototypes
+void() player_hpregen;
+
 
 void() SetChangeParms =
 {
@@ -1489,6 +1492,8 @@ void() PlayerPostThink =
 	W_WeaponFrame ();
 	// do health stuff
 	PlayerHealthTick();
+
+	player_hpregen();
 
 	// check to see if player landed and play landing sound	
 	if ((self.jump_flag < -300) && (self.flags & FL_ONGROUND) && (self.health > 0))
