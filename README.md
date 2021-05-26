@@ -1,3 +1,16 @@
+# Cuprum
+
+Cuprum is based on Copper
+It contains my personal modifications
+
+Current changelist:
+
+- Interval based Health Regen
+
+Upcoming:
+
+- Flashlight
+
 # copper
 
 A guide to compiling Copper into progs.dat, and some notes on making the best use of new methods in the code.
