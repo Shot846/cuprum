@@ -7,9 +7,10 @@ Current changelist:
 
 - Interval based Health Regen
 
-Upcoming:
+To be implemented:
 
 - Flashlight
+- CVars
 
 # copper
 
