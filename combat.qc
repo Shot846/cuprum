@@ -376,6 +376,12 @@ void(entity targ, entity inflictor, entity attacker, float damage) T_DamageApply
 	float	save, take;
 
 	if (!damage || !targ.takedamage) return;
+
+	//HPRegen
+	if(targ.classname == "player")
+	{
+		targ.hpr_delay2 = time + 4.0;
+	}
 		
 	if (targ == attacker)
 	{
